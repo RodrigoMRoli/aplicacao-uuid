@@ -2,7 +2,7 @@ node_modules
 dist
 logs
 
-/src/generated/prisma
+prisma/generated/prisma
 
 .env
 .env.dev
