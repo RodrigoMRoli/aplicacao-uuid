@@ -36,13 +36,8 @@ app.listen(port, () => {
 
 app.use(requestLogger);
 
-app.get("/", (req, res, next) => {
-	try {
-		throw new ApiError(400, "teste");
-	} catch (err) {
-		next(err);
-	}
-});
 app.use("/health", healthRoutes);
+app.use("/users", () => {});
+app.use("/posts", () => {});
 
 app.use(errorHandler);
