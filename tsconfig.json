@@ -1,17 +1,17 @@
 {
 	"compilerOptions": {
 		// Output
-		"target": "ES2022",
+		"target": "es2024",
 		"module": "nodenext",
-		"moduleResolution": "nodenext",
 		"rootDir": "./src",
 		"outDir": "./dist",
 		"noEmit": false,
+		"noUncheckedIndexedAccess": true,
 
 		// Strictness & DX
 		"strict": true,
 		"noImplicitAny": true,
-		"resolveJsonModule": true,
+		// "resolveJsonModule": true,
 		"sourceMap": true,
 
 		// Paths

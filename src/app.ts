@@ -5,7 +5,6 @@ import { fileURLToPath } from "url";
 import requestLogger from "#/middlewares/logger.js";
 import { errorHandler } from "#/middlewares/error-handler.js";
 import healthRoutes from "#/routes/health.js";
-import { ApiError } from "#/errors/api-error.js";
 
 import "#/scripts/prototypes";
 

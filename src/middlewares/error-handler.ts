@@ -7,12 +7,8 @@ export function errorHandler(
 	res: Response,
 	next: NextFunction
 ) {
-	if (err) {
-		const statusCode = (err as ApiError).statusCode || 500;
-		res.status(statusCode).json({
-			message: err.message || "Internal Server Error",
-		});
-	} else {
-		next();
-	}
+	const statusCode = (err as ApiError).statusCode || 500;
+	res.status(statusCode).json({
+		message: err.message || "Internal Server Error",
+	});
 }
